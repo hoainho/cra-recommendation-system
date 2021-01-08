@@ -1,38 +1,128 @@
-.App {
+/* STYLE CUSTOM */
+.Active{
+  color : blue;
+  background-color: pink;
+}
+/* ---------- */
+/* RESET BOOTSTRAP  */
+.list-group-item{
+  border: none !important;
+  border-radius: 0 !important;
+}
+.list-group-item:last-child{
+  margin-bottom: -1px !important;
+}
+
+/* ---------- */
+/* STYLE SLIDE  */
+.slick-arrow {
+  display: none !important;
+}
+.header{
+  background-image: url(./components/image/FF8.jpg);
+  height: 100vh;
+  min-height: 600px;
   text-align: center;
+  background-color: #000;
+  background-position: center;  
+  background-size: cover;
+  padding-top: 103px !important;
+}
+.header-image {
+  background-attachment: fixed;
+  background-size: cover;
+}
+.header-slogan {
+  color: #ec7532;
+}
+/* ---------- */
+/* MY STYLE */
+.navbar{
+  position: absolute !important;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-radius: 0 !important;
+  background: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-clone--list{
+  list-style-type: none !important;
+  display: flex !important;  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-display--contact{
+  margin: .5rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: flex-end;
+  position: relative;
+}
+.navbar-display--contact_search{
+  padding-left: 15px;
+  border-left: 1px dotted black;
+}
+.navbar-display--contact_name{
+  margin-right : 15px;
+}
+.navbar-display--toolstrip_logo__img {
+  position: relative;
+  width: 20%;
+}
+.navbar-display--toolstrip_content{
+  display: flex;
+  place-content: flex-end;
+}
+.navbar-display--toolstrip_content__list{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding-bottom: 0.08rem;
+  border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+.navbar-display--toolstrip_content__item::after{
+  position: absolute;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  content: '';
+  -webkit-transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  background-image: linear-gradient(to right, #fbbd61, #ec7532);
+  box-shadow: 0 0 20px 0 #fbbd61;
+}
+.navbar-display--toolstrip_content__item {
+  background-color: transparent !important;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-display--toolstrip_content__item:hover:hover:after {
+    right: 0;
+    width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-display--toolstrip_content__link{
+  font-size: 16px;
+  font-weight: normal;
+  line-height: .8em;
+  display: inline-block;
+  padding: 20px 24px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
+.navbar-display--toolstrip_content__link:visited,
+.navbar-display--toolstrip_content__link:active,
+.navbar-display--toolstrip_content__link:hover{
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  text-decoration: none;
+  color: #ec7532;
+  outline: none;
+  box-shadow: none;
+  background: transparent !important;
+}
+/* ---------- */
