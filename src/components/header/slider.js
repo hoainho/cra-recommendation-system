@@ -33,7 +33,6 @@ export default function slider() {
         backgroundRepeat: 'no-repeat'}}>
           <h3>{item.tittle}</h3>
           <span> {item.sub}</span>
-          {/* <img className="header-image" src={item.image} alt={item.sub}/> */}
       </div>
       )
     })
